@@ -159,11 +159,13 @@
     <ClCompile Include="CtpDemo.cpp" />
     <ClCompile Include="MyMdHandler.cpp" />
     <ClCompile Include="MySqlite3.cpp" />
+    <ClCompile Include="MyTraderHandler.cpp" />
     <ClCompile Include="MyWebsocketServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyMdHandler.h" />
     <ClInclude Include="MySqlite3.h" />
+    <ClInclude Include="MyTraderHandler.h" />
     <ClInclude Include="MyWebsocketServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

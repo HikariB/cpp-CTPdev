@@ -30,6 +30,9 @@
     <ClCompile Include="MyMdHandler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MyTraderHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MySqlite3.h">
@@ -39,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyMdHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTraderHandler.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
