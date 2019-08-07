@@ -108,13 +108,13 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)packages\websocketpp.0.8.1\include;$(SolutionDir)packages\sqlite3.3.2.9\include;$(SolutionDir)packages\CtpApi-Windows.6.3.15\include;$(ProjectDir)include\;$(IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)packages\boost.1.69.0.0\lib\native\include;$(SolutionDir)packages\websocketpp.0.8.1\include;$(SolutionDir)packages\sqlite3.3.2.9\include;$(SolutionDir)packages\CtpApi-Windows.6.3.15\include;$(ProjectDir)include\;$(IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)packages\sqlite3.3.2.9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\sqlite3.3.2.9\lib;$(SolutionDir)packages\CtpApi-Windows.6.3.15\lib;$(SolutionDir)packages\boost_regex-vc141.1.69.0.0\lib\native;$(SolutionDir)packages\boost_date_time-vc141.1.69.0.0\lib\native;$(SolutionDir)packages\websocketpp.0.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_date_time-vc141-mt-gd-x64-1_69.lib;sqlite3.lib;thostmduserapi_se.lib;thosttraderapi_se.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -157,10 +157,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CtpDemo.cpp" />
+    <ClCompile Include="MyMdHandler.cpp" />
     <ClCompile Include="MySqlite3.cpp" />
+    <ClCompile Include="MyWebsocketServer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyMdHandler.h" />
     <ClInclude Include="MySqlite3.h" />
+    <ClInclude Include="MyWebsocketServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

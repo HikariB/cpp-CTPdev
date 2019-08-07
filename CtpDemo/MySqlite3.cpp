@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sqlite3/sqlite3.h>
 
+#define ERROR_CLIENT_CONNECTION_ID	-1
 
 MySqlite3::MySqlite3()
 {

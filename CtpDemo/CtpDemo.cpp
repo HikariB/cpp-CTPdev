@@ -4,11 +4,22 @@
 
 #include <iostream>
 #include "MySqlite3.h"
+#include "MyWebsocketServer.h"
+#include "MyMdHandler.h"
 
 int main()
 {
-	MySqlite3 sql;
-	sql.test();
+	//MySqlite3 sql;
+	//sql.test();
+
+	//MyWebsocketServer wsServer;
+	//wsServer.run(9999);
+
+	MyMdHandler mdHandler;
+	mdHandler.SetSubscribeList();
+	mdHandler.connect();
+	mdHandler.subscribeMD();
+
 
 	
 
